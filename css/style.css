@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins';
+    font-weight: 400;
+}
+
+/* basic */
+.container {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.sm-container {
+    width: 1080px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.small {
+    font-size: 14px;
+}
+
+/* default btn */
+
+.btn {
+    border: 1px solid blue;
+    background: blue;
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: white;
+    transition: .3s ease-in-out;
+}
+
+.btn:hover {
+    background: none;
+    padding: 5px 20px;
+    color: blue;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+
+/* navbar hover effect */
+
+.navbar nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background: rgba(58, 0, 87, 0.734);
+    border-radius: 10px;
+    bottom: 0%;
+    left: 0%;
+    transition: width .3s;
+}
+
+.navbar nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* navbar hover effect end */
+/* basic end */
+header {
+    height: auto;
+    /*header change hove */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(254,252,255,1) 0%, rgba(229,233,255,1) 47%, rgba(229,225,255,1) 100%);
+}
+
+.navbar nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.navbar nav h4 {
+    font-weight: 700;
+}
+
+.navbar nav h4 span {
+    color: blue;
+}
+
+.navbar nav ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.navbar nav ul li a {
+    padding: 8px 25px;
+    position: relative;
+}
+
+/* main header */
+
+.row {
+    display: flex;
+}
+
+.col-2 h1 span {
+    color: blue;
+}
+
+.col-2 p,
+.col-4 p {
+    padding: 30px 0;
+}
+
+.col-2 {
+    margin: auto;
+    flex-basis: 50%;
+    padding: 50px 10px 0 0;
+}
+
+.col-2 img {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.header-right img {
+    width: 120%;
+}
+
+.about-me {
+    padding: 50px 0;
+}
+
+.personal-img img {
+    border-radius: 10px;
+    box-shadow: 1px 1px 40px rgb(255, 227, 251);
+}
+
+.personal-info {
+    padding: 30px;
+}
+
+.personal-info p {
+    text-align: justify;
+}
+
+/* skill */
+.skill {
+    padding-bottom: 100px;
+}
+
+.skill-left {
+    margin: 50px 0;
+}
+
+.skill-left ul li {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.skill-right {
+    padding: 60px;
+    box-shadow: 1px 1px 40px rgb(255, 227, 251);
+    border-radius: 8px;
+
+}
+
+.skill-right .progress {
+    position: relative;
+    padding: 15px 5px;
+}
+
+.skill-right .progress::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    background: blue;
+    bottom: 0%;
+    left: 0%;
+    border-radius: 20px;
+}
+
+/* progress 2 */
+.skill-right .progress1 {
+    position: relative;
+    padding: 15px 5px;
+}
+
+.skill-right .progress1::after {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 8px;
+    background: blue;
+    bottom: 0%;
+    left: 0%;
+    border-radius: 20px;
+}
+
+/* progress 3 */
+.skill-right .progress2 {
+    position: relative;
+    padding: 15px 5px;
+}
+
+.skill-right .progress2::after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 8px;
+    background: blue;
+    bottom: 0%;
+    left: 0%;
+    border-radius: 20px;
+}
+
+/* progress 4 */
+.skill-right .progress3 {
+    position: relative;
+    padding: 15px 5px;
+}
+
+.skill-right .progress3::after {
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 8px;
+    background: blue;
+    bottom: 0%;
+    left: 0%;
+    border-radius: 20px;
+}
+
+/* progress end */
+/* contact */
+footer {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(254,252,255,1) 0%, rgba(229,233,255,1) 47%, rgba(229,225,255,1) 100%);
+}
+.contact {
+    padding: 50px 0;
+}
+.col-4 {
+    flex-basis: 35%;
+
+}
+.table ,
+th {
+    border: 1px solid blue;
+    border-collapse: collapse;
+}
+.fa {
+    padding: 20px 25px;
+    font-size: 1.4rem;
+    color: blue;
+}
+.col-4 .logo {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.col-4 .logo span {
+color: blue;
+}
+.services-link {
+    padding-left: 70px;
+    flex-basis: 25%;
+}
+.services-link li {
+    padding: 5px 0;
+}
+.services-link li i {
+    padding-right: 10px;
+    font-size: 11px;
+}
+.footer-email {
+    width: 90%;
+    height: 50px;
+    border-radius: 24px;
+    border: none;
+}
+.footer-email:placeholder-shown {
+    font-size: 16px;
+    padding-left: 20px;
+}
+.subscribe-btn {
+    height: 41px;
+    width: 100px;
+    margin-left: -19%;
+    /* align-items: center; */
+    /* justify-content: center; */
+    border-radius: 20px;
+    cursor: pointer;
+}
+.subscribe-btn:hover{
+    background: none;
+    padding: 5px 20px;
+    color: blue;
+    border: 1px solid blue;
+    border-radius: 20px;
+}
+
+.subscribe {
+    flex-basis: 40%;
+}
