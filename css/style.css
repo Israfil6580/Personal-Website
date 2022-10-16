@@ -315,8 +315,9 @@ color: blue;
     padding: 5px 20px;
     border-radius: 4px;
     cursor: pointer;
-    margin-top: 10px;
+    margin: 10px;
     font-size: 16px;
+    text-align: center;
 
 }
 
@@ -331,7 +332,10 @@ color: blue;
         max-width: 500px;
     }
     .sm-container {
-       max-width: 300px;
+        max-width: 400px;
+    }
+    header {
+        height: 80vh;
     }
     .row {
         display: block;
@@ -362,11 +366,14 @@ color: blue;
     .btn {
         padding: 7px 20px;
     }
+    .personal-info h2 {
+        font-size: 2rem;
+    }
     }
 
 
-    @media screen and (min-width: 651px and max-width: 768px) {
+    /* @media screen and (min-width: 651px and max-width: 768px) {
         .sm-container {
             max-width: 650px;
          }
-    }
+    } */
