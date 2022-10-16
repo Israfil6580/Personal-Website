@@ -324,56 +324,64 @@ color: blue;
 .subscribe {
     flex-basis: 40%;
 }
-
-
-  /* 1440  */
-  @media screen and (max-width: 450px) {
+    /* tablet */
+@media screen and (max-width: 1441px) {
     .container {
-        max-width: 500px;
+        max-width: 1100px;
     }
     .sm-container {
-        max-width: 300px;
+        max-width: 900px;
     }
-    header {
-        height: 80vh;
+}
+
+/* laptop1024 */
+@media screen and (max-width: 1025px) {
+    .container {
+        max-width: 980px;
+    }
+    .sm-container {
+        max-width: 750px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .container {
+        max-width: 700px;
+    }
+    .sm-container {
+        width: 600px;
+    }
+    .navbar nav ul li a {
+        padding: 6px 12px;
+    }
+    .header-right img {
+        display: none;
+    }
+    .header-left {
+        margin: 50px;
+    }
+    .personal-img img {
+        width: 100%;
+        margin: auto;
     }
     .row {
         display: block;
-    }
-    nav ul,
-    .header-right .personal-img {
-        display: none;
+        margin: auto;
     }
     .header-left h1 {
-        font-size: 2.5rem;
+        font-size: 2.6rem;
     }
-    .subscribe-btn {
-        border: 1px solid blue;
-        color: white;
-        border-radius: 50px;
-        margin: 20px 0;
-        background: blue;
+    .personal-info {
+        padding: 0;
     }
     .services-link {
-        padding-left: 10px;
-    }
-    .subscribe {
-        text-align: center;
+        padding: 0;
+        margin: 30px 0;
     }
     .subscribe p {
-        padding: 10px 0 8px 0;
+        padding: 10px 0 10px 30px;
     }
-    .btn {
-        padding: 7px 20px;
-    }
-    .personal-info h2 {
-        font-size: 2rem;
-    }
-    }
+}
 
 
-    /* @media screen and (min-width: 651px and max-width: 768px) {
-        .sm-container {
-            max-width: 650px;
-         }
-    } */
+
