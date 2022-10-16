@@ -8,7 +8,10 @@ body {
     font-family: 'poppins';
     font-weight: 400;
 }
-
+html,body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 /* basic */
 .container {
     max-width: 1440px;
@@ -150,10 +153,6 @@ header {
     width: 100%;
 }
 
-.header-right img {
-    width: 120%;
-}
-
 .about-me {
     padding: 50px 0;
 }
@@ -266,7 +265,7 @@ footer {
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(254,252,255,1) 0%, rgba(229,233,255,1) 47%, rgba(229,225,255,1) 100%);
 }
 .contact {
-    padding: 50px 0;
+    padding: 50px 10px;
 }
 .col-4 {
     flex-basis: 35%;
@@ -305,28 +304,69 @@ color: blue;
     height: 50px;
     border-radius: 24px;
     border: none;
+    padding: 0 15px;
+    font-size: 17px;
 }
 .footer-email:placeholder-shown {
     font-size: 16px;
     padding-left: 20px;
 }
 .subscribe-btn {
-    height: 41px;
-    width: 100px;
-    margin-left: -19%;
-    /* align-items: center; */
-    /* justify-content: center; */
-    border-radius: 20px;
-    cursor: pointer;
-}
-.subscribe-btn:hover{
-    background: none;
     padding: 5px 20px;
-    color: blue;
-    border: 1px solid blue;
-    border-radius: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+
 }
 
 .subscribe {
     flex-basis: 40%;
 }
+
+
+  /* 1440  */
+  @media screen and (max-width: 450px) {
+    .container {
+        max-width: 500px;
+    }
+    .sm-container {
+       max-width: 300px;
+    }
+    .row {
+        display: block;
+    }
+    nav ul,
+    .header-right .personal-img {
+        display: none;
+    }
+    .header-left h1 {
+        font-size: 2.5rem;
+    }
+    .subscribe-btn {
+        border: 1px solid blue;
+        color: white;
+        border-radius: 50px;
+        margin: 20px 0;
+        background: blue;
+    }
+    .services-link {
+        padding-left: 10px;
+    }
+    .subscribe {
+        text-align: center;
+    }
+    .subscribe p {
+        padding: 10px 0 8px 0;
+    }
+    .btn {
+        padding: 7px 20px;
+    }
+    }
+
+
+    @media screen and (min-width: 651px and max-width: 768px) {
+        .sm-container {
+            max-width: 650px;
+         }
+    }
