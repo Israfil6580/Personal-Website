@@ -332,9 +332,6 @@ color: blue;
     .sm-container {
         max-width: 900px;
     }
-    .contact {
-        font-size: 14px;
-    }
 }
 
 /* laptop1024 */
@@ -343,7 +340,7 @@ color: blue;
         max-width: 980px;
     }
     .sm-container {
-        max-width: 750px;
+        max-width: 880px;
     }
 }
 
@@ -373,6 +370,7 @@ color: blue;
     }
     .header-left h1 {
         font-size: 2.6rem;
+        line-height: 50px;
     }
     .personal-info {
         padding: 0;
@@ -383,6 +381,46 @@ color: blue;
     }
     .subscribe p {
         padding: 10px 0 10px 30px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .navbar nav ul {
+        display: none;
+    }
+    .container {
+        max-width: 450px;
+    }
+    .sm-container {
+        max-width: 300px;
+    }
+    .main-header {
+        padding: 31px 0 0 0;
+    }
+    .col-2 {
+        margin: 10px;
+        padding: 0;
+    }
+    .header-left {
+        padding-bottom: 70px;
+    }
+    .skill-right {
+        margin-top: 70px;
+    }
+    .personal-info h2 {
+        font-size: 2rem;
+    }
+    .personal-info h4 {
+        font-size: 1.3rem;
+    }
+    .skill-right h3 {
+        font-size: 1.3rem;
+    }
+    .skill-right {
+        padding: 20px;
+    }
+    .subscribe p {
+        display: none;
     }
 }
 
